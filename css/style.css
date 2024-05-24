@@ -62,9 +62,15 @@
 
 /* HEADER  */
 .header {
-	padding: 24px 0;
+	padding: 11px 0;
 	background: #00353B;
 	color: #fff;
+}
+
+.header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* NAVIGATION  */
@@ -74,6 +80,7 @@
 
 .nav__list {
 	display: flex;
+	align-items: center;
 	gap: 24px;
 }
 
@@ -82,6 +89,29 @@
 }
 
 .nav__link {
+	display: flex;
+	align-items: center;
 	color: #fff;
 	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.user__nav {
+	margin-left: auto;
+}
+
+.nav__icon {
+	width: 19px;
+	height: 29px;
+	margin-right: 8px;
+}
+
+.btn_user {
+	padding: 13px 24px;
+	background: #fff;
+	color: #1F2937;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
 }
