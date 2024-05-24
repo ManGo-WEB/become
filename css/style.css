@@ -30,6 +30,13 @@
 	margin: 0 auto;
 }
 
+.list_reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* AWARD BLOCK  */
 .award {
 	padding: 12px 0;
 	background: #f5f5f5;
@@ -39,7 +46,6 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	outline: 1px solid red;
 }
 
 .award__text {
@@ -52,4 +58,30 @@
 	position: absolute;
 	right: -32px;
 	cursor: pointer;
+}
+
+/* HEADER  */
+.header {
+	padding: 24px 0;
+	background: #00353B;
+	color: #fff;
+}
+
+/* NAVIGATION  */
+.nav {
+
+}
+
+.nav__list {
+	display: flex;
+	gap: 24px;
+}
+
+.nav__item:not(:last-child) {
+	/* margin-right: 24px; */
+}
+
+.nav__link {
+	color: #fff;
+	text-decoration: none;
 }
