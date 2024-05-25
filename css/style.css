@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
  } */
-
+/* GLOBAL */
  * {
 	margin: 0;
 	padding: 0;
@@ -23,6 +23,19 @@
   font-weight: 400;
   font-style: normal;
 	font-size: 18px;
+	line-height: 1.5;
+	color: #4B5563;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal
 }
 
 .container {
@@ -36,21 +49,72 @@
 	padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* UI */
 .btn {
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 13px 25px;
 	border: none;
 	border-radius: 8px;
 	background: transparent;
 	cursor: pointer;
+	text-decoration: none;
 }
 
-.btn_success {
-	font-size: 16px;
-	line-height: 1.5;
-	padding: 13px 25px;
+.btn_success {	
 	background: #22A45A;
 	border: 1px solid #22A45A;
 	color: #fff;
+}
+
+.btn_default {
+	background: #1F2937;
+	border: 1px solid #1F2937;
+	color: #fff;
+}
+
+.bage {
+	display: inline-block;
+	padding: 4px 8px;
+	margin-bottom: 11px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #1F2937;
+	border-radius: 4px;
+}
+
+.bage_light {
+	background: #fff;
+}
+
+.bage_dark {
+	background: #fcd8ca;
+}
+
+.section__title {
+	font-size: 48px;
+	line-height: 56px;
+	margin-bottom: 28px;
+	color: #1F2937;
+}
+
+.section__description {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 40px;
 }
 
 /* AWARD BLOCK  */
@@ -201,5 +265,82 @@
 
 .hero__footer {
 	font-size: 18px;
+	text-align: center;
+}
+
+
+.about__wrapper {
+	padding: 54px 256px;
+	text-align: center;
+	border-radius: 24px;
+	background: #fcd8ca;
+	margin-bottom: 160px;
+}
+
+/* Blog post */
+.blog-post {
+	display: flex;
+	align-items: center;
+	gap: 128px;
+	margin-bottom: 128px;
+}
+
+.blog-post__content {
+	flex-shrink: 1;
+}
+
+.blog-post__title {
+	margin-bottom: 28px;
+	font-size: 48px;
+	line-height: 56px;
+	color: #1f2937;
+}
+
+.blog-post__prew {
+	margin-bottom: 40px;
+	color: #4b5563;
+}
+
+.blog-post__footer {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-size: 16px;
+}
+
+.more {
+	display: flex;
+	align-items: center;
+	position: relative;
+	text-decoration: none;
+	color: #111827;
+}
+
+.more::after {
+	position: absolute;
+	right: -30px;
+	content: "";
+	width: 24px;
+	height: 36px;
+	background: url('../img/chevron_right_icon.svg') center no-repeat;
+}
+
+.blog-post__img {
+	border-radius: 24px;
+}
+
+.blog-post_even {
+	flex-direction: row-reverse;
+}
+
+.section__descr {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section__description {
+	max-width: 730px;
+	margin-bottom: 64px;
 	text-align: center;
 }
